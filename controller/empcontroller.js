@@ -1,4 +1,4 @@
-/* //For MySQL
+//For MySQL
 const con = require('../configuration/mysql-config');
 
 //For MySQL
@@ -40,9 +40,9 @@ exports.delEmpDetails = (req, res, next) => {
        if(err) throw err;
        res.status(200).json(rows);
    });
-} */
+}
  //For MongoDB
-const Emp = require('../model/Emp');
+/* const Emp = require('../model/Emp');
 
 exports.getEmpDetails = async (req, res, next) => {
       try{
@@ -96,7 +96,7 @@ exports.delEmpDetails = async (req, res, next) => {
    }catch(error){
       res.json({msg: error});
    }
-}
+} */
 
 //Not Working - Need Help!
 /* exports.updateToy = async (req, res, next) => {
